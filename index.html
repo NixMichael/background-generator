@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {  
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+            width: 80%;
+            height: 100%;
+            margin: 0 auto;
+        }
+
+        .picker {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+        
+        .picker1 {
+            display: flex;
+            flex-basis: 35%;
+            justify-content: flex-end;
+            margin: 1rem;
+            color: white;
+        }
+
+        .picker2 {
+            display: flex;
+            flex-basis: 35%;
+            margin: 1rem;
+            color: white;
+        }
+
+        .color1 {
+            margin-left: 1rem;
+        }
+
+
+        .color2 {
+            margin-right: 1rem;
+        }
+
+        
+        .btns {
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+            width: 100%;
+        }
+
+        .btn1 {
+            display: flex;
+            flex-basis: 25%;
+            justify-content: flex-start;
+        }
+
+        .btn2 {
+            display: flex;
+            justify-content: flex-end;
+            flex-basis: 25%;
+        }
+
+/*
+        .btn {
+            margin: 1rem;
+        }
+
+        .btn1 {
+            text-align: center;
+        }
+
+        .btn2 {
+            text-align: center;
+        } */
+
+        .addUser, .logIn {
+            background: rgba(255,255,255,0.5);
+            width: 7rem;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Color Gradient Chooser</h1>
+            <div class="picker">
+                <div class="picker1">
+                    FIRST COLOR >>
+                    <input type="color" name="color1" class="color1" value="#C45E33">
+                </div>
+                <div class="picker2">
+                    <input type="color" name="color2" class="color2" value="#A556F4">
+                    << SECOND COLOR
+                </div>
+                </div>
+
+            <div class="btns">
+                <div class="btn btn1">
+                    <input type="button" class="addUser" value="Add User">
+                </div>
+                <div class="btn btn2">
+                    <input type="button" class="logIn" value="Log In">
+                </div>
+            </div>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
